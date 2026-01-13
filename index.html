@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+    <style>
+        body {
+            justify-content: center;
+            display: flex;
+        }
+        .main-container{
+            text-align: center;
+        }
+
+
+        #textinput {
+            width: 500px;
+            height: 30px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #addtaskbtn{
+            padding: 10px;
+            border-color: rgb(176, 176, 174);
+            margin: 5px;
+        }
+
+        .task {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .done {
+        text-decoration: line-through;
+        color: green;
+    }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="main-container">
+        <div class="title-container">
+            <h1>My Task Manager</h1>
+
+            <div>
+                <input id="textinput" type="text" placeholder="Enter Task">
+                <button id="addtaskbtn">Add Task</button>
+
+            </div>
+            <div class="task-container">
+                <ol id="tasklist">
+
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
